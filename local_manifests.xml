@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote name="device"
+        fetch="https://github.com/hanifardhani/" />
+    <remote name="rom"
+        fetch="https://github.com/LineageOS/" />
+
+    <!-- Device Source -->
+    <project path="device/xiaomi/platina" name="upsidedowncake_device_xiaomi_platina" remote="device" revision="lineage" clone-depth="1" />
+    <project path="kernel/xiaomi/platina" name="platinum_kernel_xiaomi_platina" remote="device" revision="eas-bpf-new-udc" clone-depth="1" />
+    <project path="vendor/xiaomi/platina" name="upsidedowncake_vendor_xiaomi_platina" remote="device" revision="lineage" clone-depth="1" />
+
+    <!-- ROM Source -->
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="rom" revision="lineage-21" clone-depth="1" />
+
+</manifest>
